@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="@string/hello" />
+	<LinearLayout android:layout_height="wrap_content"
+		android:id="@+id/container" android:layout_width="match_parent"
+		android:orientation="horizontal">
+		<Button android:id="@+id/button1" android:text="Off"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:onClick="onClickHandler" />
+		<Button android:id="@+id/button2" android:text="Once per second"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:onClick="onClickHandler" />
+		<Button android:id="@+id/button3" android:text="Thrice per second"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:onClick="onClickHandler" />
+		<Button android:id="@+id/button4" android:text="5 times per second"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:onClick="onClickHandler" />
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent" android:orientation="horizontal">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Set LED level: " />
+		<EditText android:id="@+id/level" android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></EditText>
+		<Button android:id="@+id/levelButton" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Set"></Button>
+	</LinearLayout>
+</LinearLayout>
